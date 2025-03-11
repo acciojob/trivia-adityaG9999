@@ -1,40 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Question</title>
-    <style>
-        #answer-box {
-            display: none;
-            margin-top: 10px;
-            padding: 10px;
-            border-left: 5px solid green;
-            background-color: #f0f8ff;
-        }
-    </style>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h2>What is the capital of India?</h2>
-    <form>
-        <input type="radio" id="newdelhi" name="capital" value="New Delhi" onclick="showAnswer()">
-        <label for="newdelhi">New Delhi</label><br>
-        <input type="radio" id="mumbai" name="capital" value="Mumbai" onclick="hideAnswer()">
-        <label for="mumbai">Mumbai</label><br>
-    </form>
-    
-    <div id="answer-box">
-        <p><strong>New Delhi</strong> is the capital of India and an administrative district of NCT Delhi.</p>
-    </div>
+	<!-- the entire body must be written by student -->
+	<!-- Trivia Question -->
+	<h1>What is the capital of India?</h1>
 
-    <script>
-        function showAnswer() {
-            document.getElementById("answer-box").style.display = "block";
-        }
+	<!-- Radio Buttons with Labels -->
+	<input type="radio" id="new-delhi" name="city" value="new-delhi">
+	<label for="new-delhi">New Delhi</label><br>
 
-        function hideAnswer() {
-            document.getElementById("answer-box").style.display = "none";
-        }
-    </script>
+	<input type="radio" id="mumbai" name="city" value="mumbai">
+	<label for="mumbai">Mumbai</label><br>
+
+	<!-- Blockquote Section -->
+	<blockquote id="num">
+		New Delhi is the capital of India and an administrative district of NCT Delhi.
+	</blockquote>
+    <script type="text/javascript" src="./script.js"></script>
+
 </body>
+
 </html>
