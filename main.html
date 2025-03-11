@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question</title>
+    <style>
+        #answer-box {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 5px solid green;
+            background-color: #f0f8ff;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h2>What is the capital of India?</h2>
+    <form>
+        <input type="radio" id="newdelhi" name="capital" value="New Delhi" onclick="showAnswer()">
+        <label for="newdelhi">New Delhi</label><br>
+        <input type="radio" id="mumbai" name="capital" value="Mumbai" onclick="hideAnswer()">
+        <label for="mumbai">Mumbai</label><br>
+    </form>
+    
+    <div id="answer-box">
+        <p><strong>New Delhi</strong> is the capital of India and an administrative district of NCT Delhi.</p>
+    </div>
 
+    <script>
+        function showAnswer() {
+            document.getElementById("answer-box").style.display = "block";
+        }
+
+        function hideAnswer() {
+            document.getElementById("answer-box").style.display = "none";
+        }
+    </script>
 </body>
-
 </html>
